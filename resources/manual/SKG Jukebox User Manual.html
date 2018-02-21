@@ -1,0 +1,1676 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Patrick ">
+	<META NAME="CREATED" CONTENT="20100721;103100">
+	<META NAME="CHANGEDBY" CONTENT="Patrick ">
+	<META NAME="CHANGED" CONTENT="20101103;21083800">
+	<META NAME="Info 1" CONTENT="">
+	<META NAME="Info 2" CONTENT="">
+	<META NAME="Info 3" CONTENT="">
+	<META NAME="Info 4" CONTENT="">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 0; orphans: 0 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		P.cjk { font-family: "DejaVu Sans"; font-size: 12pt; so-language: zh-CN }
+		P.ctl { font-family: "DejaVu Sans"; font-size: 12pt; so-language: hi-IN }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" BGCOLOR="#ffffff" DIR="LTR">
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=5><U>SKG
+Jukebox User Manual</U></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in; text-decoration: none">
+<FONT SIZE=2>Copyright 2010 by The Skeptical Geek. Thanks to the
+Salmon King for the original inspiration.</FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=4><U>Welcome</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-left: 0.24in; margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+<FONT SIZE=3>Welcome to the SKG Jukebox, the all in one, open source,
+multi-platform music solution. The SKG Jukebox is designed to be the
+only music program you need for your home game room, HTPC, dorm room
+computer, or even your netbook. The SKG Jukebox features:</FONT></P>
+<UL>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Easy to use touchscreen friendly interface.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Full keyboard support. Press any letter key to go to
+	the first artist beginning with that letter. Advanced options can be
+	accessed with simple key combinations. (Ctrl-A for Album Art, etc)</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Support for multiple file formats. MP3 and wav are
+	supported, as well as open formats like ogg vorbis and flac.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Custom album lists. Every member of the family can have
+	SKG Jukebox display only the albums they want to choose from Kids
+	don't have to scroll through all of Dad's “old guy” music.
+	Parents don't have to scroll through their kids' “tween crap.”</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Playlists. Because every other music program has them.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Integrated CD ripper. Rip your CDs to mp3s, ogg or flac
+	files.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Integrated album art downloader.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-right: 0.24in; margin-bottom: 0in; text-decoration: none">
+	<FONT SIZE=3>Special netbook mode, designed to be easier to use on
+	smaller screens.</FONT></P>
+</UL>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=4><U>Introduction</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<FONT SIZE=3>So, who is The Skeptical Geek, and why did he feel the
+need to write a jukebox program? I am a professional software
+developer, living somewhere in the US southwest. One day, a few years
+ago, I was seized by the irrational desire to buy a condo. I ended up
+with a large den, which wasn't being used for anything, so I turned
+it into a home game room. I put in a MAME cabinet, a pinball machine,
+a 70s Cavalier Coke machine, and a candy machine. All that was
+missing was music. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<FONT SIZE=3>I originally wanted one of those Wurlitzer bubble CD
+jukeboxes, but at around $6,000, they were about  $5,900 out of my
+price range. So I started thinking about a computer based solution.
+As a die hard geek, who has built dozens of PCs over the years, I had
+more than enough spare parts to build a simple system for storing and
+playing music. A quick Ebay search got me an inexpensive touchscreen
+monitor. What I needed now was a game room style jukebox program.</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in">I went to
+the forums at <FONT COLOR="#000080"><SPAN LANG="zxx"><U><A HREF="/home/patrick/SKG_Jukebox/resources/manual/www.arcadecontrols.com%20">www.arcadecontrols.com
+</A></U></SPAN></FONT> I found information on a lot of different
+jukebox programs, and tried several. I settled on one called SK
+Jukebox, from a forum member called Salmon King. It's a great
+program, and I highly recommend it. But it had some shortcomings. The
+UI wasn't as touchscreen friendly as I would have liked. And I didn't
+like the fact that I had to leave the jukebox and go to another
+program in order to rip a CD or download album art. And it was
+written in Visual Basic, so was tied to Windows, and I have been a
+Linux and open source guy for years. The Salmon King abandoned his
+project shortly after I discovered it, so I decided to roll my own. I
+wanted to duplicate the basic look and feel of SK Jukebox, but
+address some of the flaws. Thus was born the SKG Jukebox. The name is
+both an homage to the Salmon King, and a statement of my identity,
+SKG being short for Skeptical Geek. 
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=4><U>Running
+SKG Jukebox for the first time</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<FONT SIZE=3>When you run SKG Jukebox for the first time, you will
+see the screen below.</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_843423c.jpg" NAME="graphics1" ALIGN=LEFT WIDTH=665 HEIGHT=489 BORDER=0><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="text-decoration: none">You
+need to specify a directory where your music is, as well as telling
+it whether you want to run in normal, or netbook mode. Normal mode
+displays 4 albums per screen, netbook mode displays 2. Other than
+that, they are functionally equivalent. The intro screen will default
+to normal mode, and your OS's default location for music files
+(/home/</SPAN></FONT><FONT SIZE=3><I><SPAN STYLE="text-decoration: none">username</SPAN></I></FONT><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">/Music
+for Linux systems generally, and MyMusic fo Windows systems). You
+also need to specify whether your album collection is small or large,
+and whether your jukebox is connected to the Internet.</SPAN></SPAN></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<FONT SIZE=3>Keep in mind, SKG Jukebox is an album level jukebox. It
+expects that your music files will be organized a certain way. One,
+or more, top level music directories (The intro screen allows you to
+specify one. You can add more late on from the config screen. See the
+chapter on Configuration Options). The top level directories will
+contain subdirectories for artists. Each artist directory will
+contain subdirectories for each album. The album directory will
+contain the individual track files, as well as, optionally, the album
+art. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>After you choose a music directory and operating mode,
+SKG Jukebox will start.</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>The Main Screen</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>After SKG Jukebox starts, you will see one of the two
+screens below. If you are running in netbook mode, you will see
+something like this:</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m32d04cc9.png" NAME="graphics2" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+ <FONT SIZE=3>If you are running in normal mode, it will look like
+this:</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m520740dd.jpg" NAME="graphics3" ALIGN=LEFT WIDTH=665 HEIGHT=374 BORDER=0><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>So, what are we looking at here? The most prominent part
+of the display are the album panels, either 2 or 4 of them, depending
+on your operating mode. On the left side of the panel are the album
+art, if available, and underneath that are the artist and album
+names. On the right side of the panel are the album number and list
+of tracks. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Album number, you say? Yes. When SKG Jukebox loads your
+music library, it arranges your albums alphabetically by artist name,
+and within an individual artist, alphabetically by album name.
+Artists whose names begin with a number will appear first, before
+those whose names begin with “A”.  SKG Jukebox then assigns each
+album a number, from 1 to however many albums are in your library, up
+to 999. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>On the top of the screen, you will see a series of round
+buttons. The leftmost one has a caption of “0..9” and the others
+all have a caption of a single letter. Pressing one of those buttons
+will immediately take you to the panel of the first artist whose name
+begins with that letter. More on that in the section on Navigating
+through Your Albums. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Underneath the album panels, on the left side, you will
+see the Track List. This lists the track numbers for all the tracks
+in the queue. Clicking on this will bring up the Track List form. See
+the chapter on Managing your Track List.</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To the right of the track list is information on the
+currently running track. It shows a small version of the album art,
+the artist, album and track names, and the current and total running
+times. Here is an example of the main screen, with a track playing
+and several more in the queue. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Netbook Mode</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+ <IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m43a5a540.png" NAME="graphics4" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>and Normal Mode </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m7d428ee0.jpg" NAME="graphics5" ALIGN=LEFT WIDTH=665 HEIGHT=374 BORDER=0><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To the right of the current track information are a
+number of buttons. The numbered ones can be used to select an album
+and track by number. (See the chapter on Adding Tracks to List)  The
+left and right arrow buttons can be used to scroll forward and
+backward through your collection, 2 (Netbook Mode) or 4 (Normal Mode)
+albums at a time. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Navigating Through Your Albums</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>There are several ways to navigate though your album
+collection. The simplest is to use the left and right arrow buttons.
+Click on the buttons, or touch them if using a touchscreen. You can
+also use the left and right arrow buttons on your keyboard, or
+whatever keys you have those mapped to (See the chapter on Key
+Mapping). </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Clicking on the left or right button will allow you to
+navigate backward or forward through your albums, 2 or 4 at a time,
+depending on the Operating Mode. If going forward through your
+collection, you will see the next album panel slide in from the left
+to replace the current one. If going backward, you will see the
+current one slide away to the right, revealing the previous one. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Navigating through a large collection 2 or 4 albums at a
+time can get tedious. That's where the round buttons at the top of
+the screen come in. Clicking or touching one of those will
+immediately take you to the panel where the first artist with that
+name is located. Let's say for example, that you are in the “B”
+section looking at your Beatles albums, and you want to go to Queen.
+Instead of hitting th left arrow key a bazillion times, just click on
+the “Q” button. The panel with the first Queen album will slide
+in from the left, and Viola!, you are in the “Q” section. The
+lettered buttons can also be clicked by pressing the corresponding
+key on the keyboard, the tilde (~) key filling in for “0..9”. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Finally, if you know the exact album number you want,
+you can use the numbered buttons on the main screen. These also
+correspond to the number keys on the keyboard. Keying in the 3 digit
+album number will immediately bring up the Select Track screen.</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Selecting an Album and Track(s)</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>There are two ways to select a specific album from your
+collection. The first is to click/touch the panel containing the
+album on the main screen. The second is to enter the 3 digit album
+number, either with the keyboard, or by clicking the letter buttons
+on the bottom right. The panel containing that album will expand to
+fill the entire upper part of the screen. See screenshot below:</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_3c685ce2.png" NAME="graphics6" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Now that you have selected the album you need to select
+the track. Either highlight the appropriate track number, or enter
+the 2 digit track number via keyboard/number buttons. Then, either
+click the “Add Track” button, or hit Enter on the keyboard. Also,
+you can double click on the track. If there are no tracks currently
+playing, the selected track will start playing right away. Otherwise,
+the track will be added to the track list. If you look carefully, you
+will see the first track listed for any album as “00 – All
+Tracks”. Choosing this will load every track in the album into the
+list, playing the first one immediately if no track is currently
+playing. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Managing Your Track List</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>SKG Jukebox has several options for managing the tracks
+in your queue. Click/press on the track list in the bottom left of
+the main screen, or press Ctrl-T on the keyboard to bring up the
+Track List Screen. You will see something like this:</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m67bd34a6.jpg" NAME="graphics7" ALIGN=LEFT WIDTH=665 HEIGHT=498 BORDER=0><BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Use the up and down arrow keys to navigate through the
+list. As you highlight an individual track in the list, you will see
+some track info in the upper right corner. Below that you will see a
+number of buttons.</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<UL>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>The Move Track Up and Move Track Down List buttons
+	change the order of the highlighted track in the list. For example,
+	if you highlight track 3, and click the Move Track Down List button,
+	track 3 will become track 4 and vice versa. </FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Move to Top of List places the selected track at the
+	top of the list.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Remove Track From List deletes the highlighted track
+	from the list.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Clear Track List removes all tracks from the list,
+	including the current playing track.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Play Now moves the highlighted track to the front of
+	the queue, and starts playing it immediately.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Pause Current Track pauses playback of the current
+	track. Pressing it again resumes playback.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Cancel undoes all changes, except for Play Now.</FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Save and Exit commits all changes and goes back to the
+	main screen.</FONT></P>
+</UL>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>The Options Screen</U></FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">All
+of the advanced features of the SKG Jukebox can be accessed via the
+Options screen. Enter </SPAN></SPAN></FONT><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">
+album number of &quot;000&quot;, either with the keyboard, or the
+numbered buttons on the main screen (If configuration is set to large
+collection, you will enter album number &quot;0000&quot;).
+Alternatively, you can press Ctrl-O on the keyboard (Ctrl and the
+letter &quot;O&quot;, not the Number 0). You will see the following
+screen:</SPAN></SPAN></SPAN></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_1b76bf12.png" NAME="graphics8" ALIGN=LEFT WIDTH=499 HEIGHT=379 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The buttons on this screen should be pretty
+self-explanatory. See the chapters on each individual screen for more
+details.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>The Configuration Screen</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Access the Configuration screen from the Configuration
+button on the Options screen, or by hitting Ctrl-G on the keyboard
+from the main screen. This screen has 4 parts.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>General</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>This is for general configuration settings. There are 4
+parts to this section.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<UL>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">Music
+	Directories – Add and remove top level music directories.</SPAN></SPAN></SPAN></FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">Operating
+	mode – Normal (4 albuss per screen) or Netbook (2 albums per
+	screen).</SPAN></SPAN></SPAN></FONT></P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">Small
+	(Less than 1000) vs Large (More than 1000) album collection. If
+	using small collection, album numbers are 3 numbers long, and the
+	Configuration screen is accessed by pressing &quot;000&quot;. If
+	using large collection, album numbers are 4 digits, and the
+	Configuration screen is accessed by pressing &quot;0000&quot;. </SPAN></SPAN></SPAN></FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">Connected
+	check box – SKG Jukebox is designed to be connected to the
+	Internet. If your machine does not have access, uncheck this box.
+	Keep in mind that certain advanced features of SKG Jukebox, such as
+	album art downloading and CD ripping,  will not be available if
+	machine is not Internet capable.</SPAN></SPAN></SPAN></FONT></P>
+</UL>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_42e08356.jpg" NAME="graphics9" ALIGN=LEFT WIDTH=601 HEIGHT=512 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Custom Album Lists</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>For more information, see the chapter on Custom Album
+Lists.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Playlists</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>For more information, see the chapter on Playlists.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Key Mapper</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>SKG Jukebox comes with full keyboard support. However,
+the Skeptical Geek realizes that not everyone who uses the jukebox
+will be doing so with so with a standard keyboard. Some will be using
+it in a cabinet, using an I-Pac or similar keyboard encoder. Hence,
+the Key Mapper. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m4f95dc89.png" NAME="graphics10" ALIGN=LEFT WIDTH=601 HEIGHT=514 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The operation here is fairly simple. On the left side,
+choose the key that is actually being pressed, from the drop down
+list. If the Ctrl, Alt, or Shift keys are also part of the key press,
+check the corresponding boxes. On the right side, choose the
+keystroke that you want it maaped to, from the right side drop down
+list, then click Add. The settings are stored in the CustomKeys.xml
+file, in the resources subdirectory. Hit Clear Custom Keys to clear
+all key mappings and delete the Custom Keys file.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Another feature of key mapping is the ability to map a
+single keystroke to a Custom Album List or Playlist. If you have any
+Custom Lists or Playlists defined, you will see entries for them in
+the Map To frop down list. Map the keystroke to the list in question,
+then click Add. For each Playlist, you will see two entries in the
+Map To list, one for playing the list in order, and another one with
+&quot;(R)&quot; after the playlist name, for playing the list in
+random order. After clicking &quot;Save and Exit&quot;, press the
+keystroke to instantly load the Custom List or Playlist.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Save and Exit and Cancel Buttons</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Any changes made in the configuration screen need to be
+confirmed with the Save and Exit button. This writes all changes to
+the appropriate files, reloads the configuration, and brings you back
+to the main screen. The Cancel button undoes all changes, and reverts
+back to the main screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Custom Album Lists</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Are you a little bit country, and your spouse a little
+bit rock and roll? Do you hate your childrens' taste in music, and
+vice versa? Would you like to show off the SKG Jukebox at your next
+party, but don't want your friends to know you're secretly a Britney
+Spears fan? Then Custom Album Lists are for you!</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">Custom
+Album lists are a way to get the SKG Jukebox to display only a subset
+of the albums in your collection, instead of everything. Basically,
+you create a list, specify which albums you want in it, then load it.
+As far as SKG Jukebox is concerned, your entire library now consists
+of only those albums you </SPAN></SPAN></SPAN></FONT><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">specified
+in your list. You can create custom lists for each family member,
+different list for different types of get togethers, etc. Fist, let's
+walk through how to create one.</SPAN></SPAN></SPAN></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Creating a Custom Album List</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>First, bring up the Configuration screen, and go the
+Custom Album List section.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_14512271.png" NAME="graphics11" ALIGN=LEFT WIDTH=605 HEIGHT=518 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Click the Add button to get to the Add/Edit Custom List
+screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_5f83fcd0.png" NAME="graphics12" ALIGN=LEFT WIDTH=665 HEIGHT=497 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Give the list a name</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_1928dfa7.png" NAME="graphics13" ALIGN=LEFT WIDTH=665 HEIGHT=484 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Expand the artist entries, to get to the individual
+albums. Check on the ones you want, then click on the right facing
+arrow button to add them to the list. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m40200204.png" NAME="graphics14" ALIGN=LEFT WIDTH=665 HEIGHT=489 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_2b75b9e4.png" NAME="graphics15" ALIGN=LEFT WIDTH=665 HEIGHT=486 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Mad a mistake? Check the album you don't want in the
+right hand list, then click the left facing arrow button to return it
+to the available albums list.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m4aa79cb0.png" NAME="graphics16" ALIGN=LEFT WIDTH=665 HEIGHT=491 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>When you are satisfied, click the Save button. The new
+album list appears in the Custom Album List section of the
+Configuration screen. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_5779306d.png" NAME="graphics17" ALIGN=LEFT WIDTH=597 HEIGHT=516 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Remember to click Save and Exit, else your custom list
+will be erased. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Editing a Custom Album List</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To Edit a Custom Album List, highlight it and click
+Edit.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m461cb0de.png" NAME="graphics18" ALIGN=LEFT WIDTH=611 HEIGHT=516 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Add and remove albums as if you were creating a new
+list. When finished, click Save. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m5f198687.png" NAME="graphics19" ALIGN=LEFT WIDTH=665 HEIGHT=488 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Remember to click Save and Exit when finished.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Deleting a Custom Album List</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To delete a Custom Album List, highlight it and click
+Delete. A dialog ox will pop up to ask if you are sure. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_5b913911.png" NAME="graphics20" ALIGN=LEFT WIDTH=602 HEIGHT=518 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>As always, remember to click Save and Exit.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Loading a Custom Album List</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To load a Custom Album List, choose Load Custom List
+from the Configuration screen, or press Ctrl-L from the main screen.
+This will bring up the Load Custom List screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_2b7e024d.png" NAME="graphics21" ALIGN=LEFT WIDTH=504 HEIGHT=402 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Choost the list you wanr from the drop down list. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m158661bf.png" NAME="graphics22" ALIGN=LEFT WIDTH=504 HEIGHT=399 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The albums in that list will appear in the list
+underneath. This is just for reference, so you know you have the
+correct list. Then click the Load button. A dialog box will pop up
+asking you to confirm, and warning you that your existing track list
+will be cleared. This is necessary, since a track list is just a list
+of track numbers, and the track numbers will all change once the
+Custom Album List is loaded. The custom list will then be loaded, and
+the main screen will change and the albums renumbered accordingly.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m2c74f5df.png" NAME="graphics23" ALIGN=LEFT WIDTH=508 HEIGHT=394 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none; page-break-before: always">
+<FONT SIZE=3>Before loading Skeptical Album List</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_38471f42.png" NAME="graphics24" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>After</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_11fd93d0.png" NAME="graphics25" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Playlists</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Do you have a list of favorite songs you like to listen
+to while working out, cleaning house, or having a party? With
+Playlists, you can load all of the into SKG Jukebox in one easy step.
+Playlists work similarly to Custom Album Lists. You create one, give
+it a name, add inidvidual tracks, and save it. Then, you load it from
+the Options screen, and the songs are all added to the track queue. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Creating a Playlist</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To create a new playlist, go to the Playlist section of
+the Configuration screen, and click the Add button.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_3f9bc0e0.png" NAME="graphics26" ALIGN=LEFT WIDTH=606 HEIGHT=524 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>This will bring up the Add/Edit Playlist screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+ 
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m444f4e98.png" NAME="graphics27" ALIGN=LEFT WIDTH=665 HEIGHT=493 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Give the list a name.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_4a1eda62.png" NAME="graphics28" ALIGN=LEFT WIDTH=665 HEIGHT=480 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Expand the artist and album entries in the tree on the
+right. Check the tracks you want to add to the playlist, and click
+the right arrow button. To remove tracks from the list, check the
+track in the list on the right, and click the left arrow button. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_39fcfbc1.png" NAME="graphics29" ALIGN=LEFT WIDTH=665 HEIGHT=487 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m294f6a59.png" NAME="graphics30" ALIGN=LEFT WIDTH=665 HEIGHT=485 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>You can change the position of a track in the list, with
+the Move Up and Down buttons. Highlight the track whose position you
+want to change, and click one of the two buttons. Keep doing this
+until the tracks are in the order you want, then click Save. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_1c69928d.png" NAME="graphics31" ALIGN=LEFT WIDTH=665 HEIGHT=479 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>See how the position of the highlighted track changes
+after clicking the Move Up button.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m691b99f2.png" NAME="graphics32" ALIGN=LEFT WIDTH=665 HEIGHT=476 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Your playlist is now in Config Screen. Remember to click
+Save and Exit to write the Playlist to the playlists file in the
+resources directory. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m3d4f103b.png" NAME="graphics33" ALIGN=LEFT WIDTH=605 HEIGHT=514 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Editing a Playlist</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To edit a Playlist, highlight it in the Playlist section
+of the Config screen and click Edit.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_629b7cf4.png" NAME="graphics34" ALIGN=LEFT WIDTH=606 HEIGHT=517 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>This will bring up the Add/Edit Playlist screen. Add and
+remove tracks, the same as if you were creating a list, and click
+Save. Make sure to click Save and Exit in the Config screen to save
+the changes to the playlists file.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m3b170f4a.png" NAME="graphics35" ALIGN=LEFT WIDTH=665 HEIGHT=472 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Loading a Playlist</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To load a Playlist, click the Load Playlist button on
+the Options screen, or presst Ctrl-P on the keyboard. This will bring
+up the Load Playlist screen. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_70ec16ef.png" NAME="graphics36" ALIGN=LEFT WIDTH=500 HEIGHT=409 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Choose the Playlist you wish to load from the drop down
+list. The tracks in the list will appear in the box underneath. This
+is just for verification, so you can verify you have the correct
+Playlist. Check &quot;Play in Random Order&quot; if you want to,
+well, play the tracks in random order (some of these are pretty
+staightforward, folks). Then click Load, and viola, all your tracks
+are loaded at once.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m309aa424.png" NAME="graphics37" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Adding a CD to Your Collection</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The SKG Jukebox has a built-in CD ripper function so you
+can add new albums to your collection, without leaving the program.
+First, make sure you have an audio CD in the drive. Then, click Rip
+CD from the Options screen, or press Ctrl-R on the keyboard. This
+will bring up the Add CD screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_27609789.png" NAME="graphics38" ALIGN=LEFT WIDTH=665 HEIGHT=470 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The CD ripper screen queries the freedb service for
+information about you album, and displays the artist, album name,
+genre and year in the boxes above. (If known. Sometimes freedb
+doesn't know the genre or year, as above)  In the box on the lower
+left, you will see the tracks as a set of check boxes. By default,
+they are all checked. Uncheck any tracks you do not want to rip. 
+(There are many reasons you might want to do this. For example, i
+love Lynyrd Skynyrd, but Free Bird makes me want to strangle an
+entire neighborhood, so i left thsat one off when i ripped their Best
+Of album. Also, some mixed media Cds contain movies, photos, or other
+data that the album ripping logic will choke on, so ou will want to 
+uncheck those. The most popular examples of this are the Beatles
+remastered Cds, each with a Quicktime movie file). To the right of
+the track list, you will see 3 radio buttons for choosing the format.
+SKG Jukebox rips Cds to 3 formats: MP3s using LAME, as well as the
+free and open formas Ogg Vorbis and FLAC.  Once you have chosen your
+format and unchecked any tracks you don't want, click Rip.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m24c05dd4.png" NAME="graphics39" ALIGN=LEFT WIDTH=665 HEIGHT=470 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>There are two stages to ripping a CD, extraction and
+encoding. Extraction rips the CD audio tracks from the disc, and
+saves them as uncompressed wav files, in the tracks subdirectory of
+SKG Jukebox. Encoding then takes that wav file, compresses it and
+encodes it in the format of you choice. Afterward, the temporary wav
+file is deleted, so as not to use up valuable hard drive space. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m43ea4c9f.png" NAME="graphics40" ALIGN=LEFT WIDTH=665 HEIGHT=475 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>After all tracks are extractted and encoded, a dialog
+box will pop up asking if you want to rip another CD, or exit. Make
+sure you have a different disc in the drive before you click Import
+Another CD, or else the ripper will look up information on the
+current disc, and try to rip it again.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_33d658b3.png" NAME="graphics41" ALIGN=LEFT WIDTH=665 HEIGHT=470 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Adding Album Art</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>SKG Jukebox has two methods of obtaining, or changing,
+the album art for you collection. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Obtaining Art for a Single Album</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To download art for a single album, click tha album
+panel, or enter the album number, as if you were selecting the album
+to add a track.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m7c734d2e.png" NAME="graphics42" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_7d845e3f.png" NAME="graphics43" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>If the album has no artwork, you will see the defaukt
+graphic. Yes, I know it's ugly. I'm the Skkeptical Geek, not the
+Skeptical Graphic Artist. Click anywhere on the artwork, or lack
+thereof, to bring up the Album Art screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m18d535ba.png" NAME="graphics44" ALIGN=LEFT WIDTH=665 HEIGHT=451 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The Album Art screen will search various internet image
+archives for artwork matching the artist and album name. It will
+return several options. Ust the left and right arrow buttons to go
+through the various pictures. Underneath each picture, you will see
+the height and width of the image in pixels. Don't wory, the image
+will be scaled to fit the album panel, but higher resolution images
+usually scale better when you expand the album panel to full screen.
+When you get to the one you like, click Save as Album Art. You will
+now see the album art displayed on the main screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m502d6d41.png" NAME="graphics45" ALIGN=LEFT WIDTH=665 HEIGHT=389 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=3><U>Adding Art for Several Albums</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>To add artwork for multiple albums, click the Album Art
+button on the Options screen, or press Ctrl-A on you keyboard. The
+Multiple Album Art screen will appear.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_65f629ce.png" NAME="graphics46" ALIGN=LEFT WIDTH=665 HEIGHT=431 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>On the left, you will see a list of album names with
+check boxes. To the right of this, several buttons, and underneath, 2
+radio buttons. The check boxes contain album information, the album
+number, artist and album names, of all the albums in your collection
+that do not have artwork associated with them. If, for some reason,
+you do not wish SKG Jukebox to sesarch for artwork for any of the
+albums on this list, uncheck the appropriate box. The up/down arrow
+buttons and the Check/Uncheck button are for touchscreen users to
+traverse the list, checking and unchecking albums. The radio buttons
+underneath switch the display from only albums without art, to all
+albums. If you have artwork for an album, but want SKG Jukebox to
+search for a replacement, choose Show All Albums, and check the
+albums for which you want to replace the artwork. Click Download Now
+to start downloading art for the first checked album in the list.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_m760d8255.png" NAME="graphics47" ALIGN=LEFT WIDTH=665 HEIGHT=397 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The same as if you were downloading art for a single
+album, SKG Jukebox will search the Internet and  return a number of
+choices. Use the left and right arrow buttons to scro ll through
+them, then click Save as Album Art when you find the one you want.
+Then click Next Album to start searching for artwork for the next
+checked album in the list. Click Exit when finished.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Help Screen</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Click the Help button on the Options screen, or press
+Ctrl-H </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>on the keyboard from the main screen, to access the Help
+screen. The help screen basically shows you this user manual.
+Touchscreen users can use the up and down arrow keys to scroll
+through the document.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<IMG SRC="/home/patrick/SKG_Jukebox/resources/manual/SKG%20Jukebox%20User%20Manual_html_542591d.png" NAME="graphics48" ALIGN=LEFT WIDTH=665 HEIGHT=498 BORDER=0><BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>Keyboard Shortcuts</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>From the beginning, one of the design goals of SKG
+Jukebox was to be touchscreen friendly. The idea was that anything
+you want to do on the jukebox, you can do with a touch or a mouse
+click. And, with a few exceptions, such as giving a name to a new
+Playlist or Custom Album List, I think I've succeeded. The SKG
+Jukebox does, however, come with a full range of keyboard shortcuts,
+for those whos wish to do things that way. The following are the list
+of keyboard commands. Keep in mind that any of these can be remapped
+on the Key Mapper portion of the Configuration screen.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>0 - 9 (Number keys) – Corresponds to the number
+	buttons on the main screen.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Left Arrow – Corresponds to the &quot;&gt;&quot;
+	button on the main screen.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Right Arrow --  Corresponds to the &quot;&lt;&quot;
+	button on the main screen.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Up Arrow – Increase volume.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Down Arrow – Decrease Volume.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>A - Z (Letter Keys) – Corresponds to the letter
+	buttons at the top of the screen.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>~ (Tilde Key) – Corresponds to the 0..9 button at the
+	top of the screen.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Space – Pause/Resume playing current track.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Enter – Adds the selected track to the list.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-A – Album Art Screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-C – Clear all tracks, including the one
+	currently playing.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-G – Configuration screen.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-H – Help screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-L – Load Custom List Screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-M – Minimize SKG_Jukebox (aka Boss Mode).</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-N – Play next track in list.</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-O – Options Screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-P – Load Playlist Screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-R – Album Ripper Screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Ctrl-T – Track List Screen</FONT></P>
+	<LI><P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+	<FONT SIZE=3>Esc – On main screen, exits jukebox. On any other
+	screen, exits that screen.</FONT></P>
+</UL>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">
+<FONT SIZE=4><U>FAQ</U></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>The title of this section is a little misleading. Since
+this is a new product, I haven't actually had any questions asked
+yet. So here are some questions I think you might ask, based on my
+experiences, and those of the few people who have seen this in
+development.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—What kind of music files will SKG_Jukebox play?</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—At the moment, SKG_Jukebox will play mp3 files, as
+well as the free and open ogg and flac formats. I may add support for
+additional file types later, if requested. I do not support aac at
+the moment, because of objections to digital rights management. If I
+can figure out how to support only non-DRMed aac files, I may support
+it.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q--What kinds of file formats cn the album art be?</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—SKG_Jukebox will display bmp, gif, jpeg or tiff
+album art files. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q---My tracks don't play. What gives?</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—Probably a codec issue. SKG_Jukebox doesn't really
+have a decoder, per se. It uses Qt's Phonon architecture, which in
+turn relies on the underlying OS to determin what it can play.
+Essentially, if the OS doesn't recognize the file, SKG_Jukebox can't
+play it. </FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="text-decoration: none">
+   </SPAN><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">For
+Linux users, it is probably mp3 files you can't play. A lot of Linux
+distributions, including popular ones like Ubuntu, don't come with
+mp3 support built in, because mp3 is a patented file format. Adding
+it isn't difficult, though you will have to get familiar with a
+command line. Just do a Google search for the name of your
+distribution, plus the phrase &quot;mp3 support&quot;. If this
+problem perists, check the settings for your phonon backend in System
+Settings. </SPAN></SPAN></SPAN></FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="text-decoration: none">
+   </SPAN><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">Conversely,
+Windows does not come with support for ogg or flac files, because
+free and open file formats make Microsoft executives cry. Again, do a
+Google search for &quot;Ogg Windows&quot; or &quot;Flac Windows&quot;
+to find out how to support those files in Windows.</SPAN></SPAN></SPAN></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—Sometimes scrolling from one panel to another is
+fast and smooth. Sometimes it is slow and jerky.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—Check your album art files. Whn SKG Jukebox loads
+the album dat into the album panels, it scales the album art to fit
+the available space. This is very processor intensive and if you have
+large album art files and a slower processor, it can take several
+seconds to go from one panel to the next, or to display the selected
+album. Use the album art download screen to find art files that are
+smaller and will scale better. Somewhere between 500-1000 pixels per
+side is best, although 300 * 300 will work very nicely for smaller
+screens.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—I am running in netbook mode, and the main screen
+doesn't display correctly.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—The netbook mode is really designed for netbooks. It
+runs best at 1024 * 600. It doesn't generally scale well below that.
+If you are running 800 * 600 or below:</FONT></P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="text-decoration: none">
+   </SPAN><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">A)
+ Why? </SPAN></SPAN></SPAN></FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="text-decoration: none">
+   </SPAN><FONT SIZE=3><SPAN LANG="zxx"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none">B)
+ Run in normal mode. It scales well down to that resolution, and very
+well at 1024 * 768 or above.</SPAN></SPAN></SPAN></FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—Where does the artwork in the Download Album Art
+screen come from?</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—The album art screens do a  Google and Yahoo image
+search using the artist and album name, return the top 5 results from
+each site, and put them in a list. There may be some overlap, or
+there may not be 5 good matches, so the list may contain less than 10
+items. I know there are better sources out there. Amazon, for example
+has greater breadth, and some of the web sites that specialize in
+album art have higher quality images. However, Amazon's api
+(application programming interface) is incompatible with open source,
+and the specialty sites generally don't want applications using their
+content, unless they are web apps linking to their site. The Album
+Art function is designed to be easy to use, and retrieve a reasonable
+quality image most of the time, or &quot;close enough for government
+work&quot; as my grandfather, The Skeptical Grandpa, used to say. It
+may not work for obscure bands but basically, if you can buy the CD
+at Best Buy, SKG Jukebox can find the album art for it.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—I want to control the bit rate, quality settings, or
+one of the thousand other lam/ogg/falc options when ripping a CD.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—Not going to happen. The album ripper function is
+designed to be simple, not comprehensive. It will produce good
+quality files at a reasonable file size. If you need more control
+over the extraction and encoding process, there are numerous other
+programs for all platforms that can provide this. See the above
+&quot;close enough&quot; quote.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—Hey, I just ripped this .38 Special album, and it
+doesn't show in my library. What gives?</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—You are probably on a Linux system. The period (.)
+at the beginning of the band's name is interpreted by Linux to mean
+hidden file or directory. Go into your music directory. Make sure to
+tell your file manager to show hidden files. Rename the artist
+directory, removing the period at the beginning. The artist and all
+the albums will show up as normal. </FONT>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>Q—I tried ripping one of the new Beatles remastered
+albums. It took forever, and the last track is junk.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=3>A—The new Beatles remastered albums contain a data
+track at the end, actually a Quicktime movie file about the making of
+the album. Te cd ripper screen does not know how to extract or encode
+this kind of file, so the results can be unpredictable. It also
+doesn't know how to distinuish between audio and other tracks when it
+is reading the CD. Just uncheck the last file before ripping the CD.
+Similar things can happen with other mixed media discs, so make sure
+and go over the track list before clicking the Rip CD button.</FONT></P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P LANG="zxx" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+</BODY>
+</HTML>
